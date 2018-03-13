@@ -65,7 +65,7 @@ td {
 
 .wrapper {
   min-height: calc(100vh - 143px);
-
+  overflow: hidden;
 }
 
 
@@ -160,7 +160,7 @@ footer {
 }
 
 .table_top {
-    padding-right: 3em;
+    padding-right: 4.5em;
     font-size: 1em;
 }
 
@@ -183,30 +183,38 @@ footer {
 
 @media screen and (max-width: 712px) {
 
-  /* TABLET */
-
-  /* BODY */
-
-  .bookshelf_h1={
+  .bookshelf_h1{
     font-size: 2.7em;
   }
 
+}
 
 /* MOBILE/PHONE  */
 
-}
-
 @media screen and (max-width: 453px) {
 
-  body {
+  html {
     font-size: .7rem;
-  }
-
-  header {
-    height: 50px;
   }
 
   .bookshelf {
       width: 100%;
+  }
+
+  .table_top {
+      padding-right: 2em;
+      font-size: .8em;
+  }
+
+  .table_top:last-child {
+      padding-right: 1.5em;
+  }
+
+  td {
+      font-size: 1em;
+  }
+
+  .wrapper {
+      min-height: calc(100vh - 100px);
   }
 }
