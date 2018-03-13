@@ -1,0 +1,60 @@
+﻿@model IEnumerable<MyLibraryNew.Models.Book>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="wrapper">
+    <h1 class="home_title">Welcome to</h1><br>
+<p class="home_subtitle">MyBrary</p>
+    <div id="bookshelf" class="bookshelf">
+        <h1 class="bookshelf_h1">Bookshelf</h1>
+            <button>@Html.ActionLink("Create New Book", "Create", null, new { @style = "color:white" })</button>
+            <div class="wrapper-index">
+            <table class="table">
+                <tr>
+                    <th>
+                        <span class="table_top">@Html.DisplayNameFor(model => model.Title)</span>
+                    </th>
+                    <th>
+                        <span class="table_top">@Html.DisplayNameFor(model => model.TotalPages)</span>
+                    </th>
+                    <th>
+                        <span class="table_top">@Html.DisplayNameFor(model => model.Author)</span>
+                    </th>
+                    <th>
+                       <span class="table_top"> @Html.DisplayNameFor(model => model.Progress)</span>
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalPages)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Author)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Progress)
+                </td>
+                <td class="keys">
+                    @Html.ActionLink("Edit", "Edit", null, new { id = item.BookId }, new { @class = "actionlink" }) |
+                    @Html.ActionLink("Info", "Details", null, new { id = item.BookId }, new { @class = "actionlink" }) |
+                    @Html.ActionLink("Remove", "Delete", null, new { id = item.BookId }, new { @class = "actionlink" })
+                </td>
+            </tr>
+}
+            </table>
+            </div>
+
+        </div>
+    </div>
+    
+

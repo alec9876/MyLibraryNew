@@ -1,0 +1,212 @@
+/* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+    color: black;
+    background-color: #1a283d
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  width: 10.75em;
+  height: 2.5em;
+}
+
+header {
+  height: 4.375em;
+}
+
+button {
+  color: white;
+  font-size: 1.5em;
+  height: 2em;
+  width: 9em;
+  font-family: 'Righteous', cursive;
+  box-shadow: -2px 2px 2px rgb(100, 100, 100);
+  background-color: rgb(51, 190, 59);
+  transition: 0.2s ease-in-out;
+  display: block;
+  margin: 1em auto;
+}
+
+button:hover {
+  background-color: rgb(150, 211, 150);
+  color: black;
+}
+
+table {
+    margin: auto;
+}
+
+th {
+    font-size: 1.5em;
+}
+
+td {
+    overflow-wrap: normal;
+    padding-bottom: 1.5em;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.wrapper {
+  min-height: calc(100vh - 143px);
+
+}
+
+
+
+/* Clearfix */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  height: 0;
+  clear: both;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  height: 100px;
+  padding-top: 15px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+
+/* Main Styles */
+
+
+/* ////////////////////////////
+          HOME
+////////////////////////////// */
+
+.home_title {
+  clear: both;
+  font-family: 'Lobster', cursive;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: -.5em;
+}
+
+.home_subtitle {
+    font-family: 'Righteous', cursive;
+    font-size: 6rem;
+    margin: 1rem auto;
+    text-align: center;
+    color: rgba(255,237,153,1);
+}
+
+.home_h1{
+  font-size: 3em;
+  text-align: center;
+  color: rgb(195,195,195);
+  font-family: 'Righteous', cursive;
+  padding-top: 1.4em;
+  margin: auto;
+  width: 8em;
+  border-bottom: 2px solid rgb(195,195,195);
+}
+
+.p_home {
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.5em rgba(255,255,255, 0.5);
+  width: 50%;
+  margin: 0 auto 4em auto;
+}
+
+
+/* ////////////////////////////
+          BOOKSHELF
+////////////////////////////// */
+
+.bookshelf {
+  background-color: rgba(255,237,153,0.9);
+}
+
+.bookshelf_h1 {
+  color: rgb(170, 170, 170);
+  text-align: center;
+}
+
+.bookshelf_h1{
+  font-size: 4em;
+  color: black;
+  font-family: 'Righteous', cursive;
+  padding-top: .7em;
+  margin: auto;
+  width: 6.3em;
+  border-bottom: 2px solid black;
+}
+
+.table_top {
+    padding-right: 3em;
+    font-size: 1em;
+}
+
+.keys {
+    margin-right: 3em;
+}
+
+.actionlink {
+    color: black;
+}
+
+.actionlink:hover {
+    color: green;
+}
+
+
+/*//////////////////////////////
+          RESPONSIVE
+//////////////////////////////*/
+
+@media screen and (max-width: 712px) {
+
+  /* TABLET */
+
+  /* BODY */
+
+  .bookshelf_h1={
+    font-size: 2.7em;
+  }
+
+
+/* MOBILE/PHONE  */
+
+}
+
+@media screen and (max-width: 453px) {
+
+  body {
+    font-size: .7rem;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  .bookshelf {
+      width: 100%;
+  }
+}
