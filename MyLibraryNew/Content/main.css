@@ -58,13 +58,37 @@ td {
     padding-bottom: 1.5em;
 }
 
-.container {
+dt {
+    color: rgba(255,237,153,0.9);
+    padding-bottom: 1em;
+}
+
+dd {
+    color: white;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+}
+
+.margin_bottom {
+    padding-bottom: 2em;
+}
+
+.container_mybrary {
     width: 100%;
     margin: auto;
 }
 
+.container_create {
+    width: 80%;
+    margin: auto;
+}
+
 .wrapper {
-  min-height: calc(100vh - 143px);
+  min-height: calc(100vh - 100px);
   overflow: hidden;
 }
 
@@ -92,10 +116,9 @@ footer {
 
 /* Main Styles */
 
-
-/* ////////////////////////////
-          HOME
-////////////////////////////// */
+.text_color {
+    color: rgba(255,237,153,0.9);
+}
 
 .home_title {
   clear: both;
@@ -107,7 +130,7 @@ footer {
 }
 
 .home_subtitle {
-    font-family: 'Righteous', cursive;
+    font-family: 'Righteous', cursive; 
     font-size: 6rem;
     margin: 1rem auto;
     text-align: center;
@@ -135,11 +158,6 @@ footer {
   margin: 0 auto 4em auto;
 }
 
-
-/* ////////////////////////////
-          BOOKSHELF
-////////////////////////////// */
-
 .bookshelf {
   background-color: rgba(255,237,153,0.9);
 }
@@ -161,7 +179,7 @@ footer {
 
 .table_top {
     padding-right: 4.5em;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 .keys {
@@ -176,15 +194,45 @@ footer {
     color: green;
 }
 
+.backtoindex {
+    color: white;
+    font-size: 1em;
+    height: 1.5em;
+    width: 7em;
+    font-family: 'Righteous', cursive;
+    transition: 0.2s ease-in-out;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.backtoindex:hover {
+    color: black;
+    background-color: rgba(255,237,153,0.9);
+    text-decoration: none;
+}
+
+
+
+
+
 
 /*//////////////////////////////
           RESPONSIVE
 //////////////////////////////*/
 
-@media screen and (max-width: 712px) {
+@media screen and (max-width: 768px) {
 
   .bookshelf_h1{
     font-size: 2.7em;
+  }
+
+  dt {
+      float: left;
+  }
+
+  dd {
+      margin-left: 6em;
   }
 
 }
@@ -195,6 +243,12 @@ footer {
 
   html {
     font-size: .7rem;
+  }
+
+  button {
+      font-size: 1em;
+      height: 2em;
+      width: 10em;
   }
 
   .bookshelf {
@@ -211,10 +265,15 @@ footer {
   }
 
   td {
-      font-size: 1em;
+      font-size: .7em;
   }
 
   .wrapper {
       min-height: calc(100vh - 100px);
+      overflow: visible;
+  }
+
+  .margin_bottom {
+      padding-bottom: 1em;
   }
 }
