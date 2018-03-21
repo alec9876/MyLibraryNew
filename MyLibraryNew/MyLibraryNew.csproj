@@ -121,6 +121,10 @@
     <Compile Include="Migrations\201803062335126_initialMigrations.Designer.cs">
       <DependentUpon>201803062335126_initialMigrations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803202215230_front-end validation.cs" />
+    <Compile Include="Migrations\201803202215230_front-end validation.Designer.cs">
+      <DependentUpon>201803202215230_front-end validation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Data\MyBraryContext.cs" />
@@ -153,6 +157,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201803062335126_initialMigrations.resx">
       <DependentUpon>201803062335126_initialMigrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803202215230_front-end validation.resx">
+      <DependentUpon>201803202215230_front-end validation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
